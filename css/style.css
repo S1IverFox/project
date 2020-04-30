@@ -25,11 +25,13 @@ body * {
     outline: 0;
     border: 0;
     color: #fff;
-    padding: 13px 33px;
     text-transform: uppercase;
     font-style: italic;
     height: 37px;
     width: 161px;
+}
+
+.label {
     cursor: pointer;
 }
 
@@ -94,6 +96,7 @@ footer {
     font-size: 40px;
     color: #fff;
     margin: 0;
+    font-weight: 500px;
 }
 
 .text_white {
@@ -212,7 +215,8 @@ footer {
 .group_3,
 .min_img img,
 .form,
-.block_list {
+.block_list,
+.form_inside_first {
     display: flex;
 }
 
@@ -228,7 +232,6 @@ footer {
     height: 9px;
     border-radius: 50%;
     margin-top: 3px;
-    cursor: pointer;
     background-color:rgba(255, 255, 255, 0.3);
 }
 
@@ -264,8 +267,8 @@ footer {
 
 .play {
     position: absolute;
-    top: 174px;
-    left: 365px;
+    top: 160px;
+    left: 345px;
 }
 
 .overlay_v {
@@ -370,6 +373,8 @@ input[type=checkbox]:checked+label:before {
 }
 
 .group_4 {
+    display: flex;
+    justify-content: space-between;
     width: 1236px;
     height: 608px;
     margin: 31px auto;
@@ -418,8 +423,8 @@ input[type=checkbox]:checked+label:before {
     height: 54px;
     font-family: Yeseva One;
     font-style: normal;
-    padding: 0;
-    cursor: auto;
+    padding: 15px;
+    text-align: center;
 }
 
 .lie_button:not(:last-child) {
@@ -548,7 +553,7 @@ input[type=checkbox]:checked+label:before {
     box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.04);
 }
 
-.block_reviews img {
+.avatar {
     border-radius: 50%;
 }
 
@@ -562,7 +567,6 @@ input[type=checkbox]:checked+label:before {
 .not_button_days {
     justify-content: space-between;
     margin-left: 0;
-    
 }
 
 .not_button_min {
@@ -572,16 +576,22 @@ input[type=checkbox]:checked+label:before {
 }
 
 .min_button {
+    display: flex;
     width: 160px;
     height: 52px;
     padding: 10px 15px;
     border-radius: 0;
-    cursor: auto;
+    font-style: normal;
 }
 
 .min_button_small {
     width: 135px;
     border-right: 1px solid #fff;
+}
+
+.min_button span {
+    padding-left: 10px;
+    padding-top: 5px;
 }
 
 .block_6 {
@@ -608,10 +618,6 @@ input[type=checkbox]:checked+label:before {
 .large_form_inside {
     width: 520px;
     margin: 46px auto 0;
-}
-
-.form_inside_first {
-    display: flex;
 }
 
 .form_inside_field {
