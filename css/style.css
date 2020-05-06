@@ -693,7 +693,7 @@ input[type=checkbox]:checked+label:before {
     }
 
     #conteiner {
-        max-width: 90%;
+        max-width: 87%;
     }
 
     .block_1 {
@@ -797,7 +797,7 @@ input[type=checkbox]:checked+label:before {
 
     .play {
         position: absolute;
-        left: 35%;
+        left: 40%;
         top: 25%;
     }
     
