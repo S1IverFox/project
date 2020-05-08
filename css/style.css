@@ -98,7 +98,7 @@ footer {
     font-size: 2.52em;
     color: #fff;
     margin: 0;
-    font-weight: 500px;
+    font-weight: 500;
 }
 
 .text_white {
@@ -170,7 +170,6 @@ footer {
     width: 484px;
     height: 482px;
     padding-left: 42px;
-    font-size: 0.882em;
 }
 
 .group_2_text p,
@@ -259,16 +258,16 @@ footer {
 }
 
 .group_3_1 {
-    justify-content: center;
     padding-top: 30px;
+    justify-content: center;
 }
 
 .img_adaptive {
-        display: block;
-        max-width: 80%;
-        height: auto;
-        margin: 0 auto;
-    }
+    display: block;
+    max-width: 80%;
+    height: auto;
+    margin: 0 auto;
+ }
 
 .video {
     position: relative;
@@ -279,9 +278,9 @@ footer {
 
 .play {
     position: absolute;
-    top: 40%;
-    left: 45%;
-    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .overlay_v {
@@ -289,7 +288,6 @@ footer {
     width: 100%;
     height: 434px;
     background-color: rgba(0, 0, 0, .7);
-    
 }
 
 .decor {
@@ -304,7 +302,7 @@ footer {
     font-size: 1.134em;
     text-align: center;
     color: #363636;
-    padding-bottom: 75px;
+    padding-bottom: 20px;
 }
 
 .text_conteiner {
@@ -320,7 +318,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 769px;
-    margin: 0px auto;
+    margin: 20px auto 0;
 }
 
 .form_discription {
@@ -720,14 +718,17 @@ input[type=checkbox]:checked+label:before {
         display: flex;
         padding-top: 0;
         text-align: center;
+        max-height: 1074px;
     }
 
     .group_2_1_text {
         width: auto;
+        padding-left: 0;
     }
 
     .text_mobile_center {
         margin: 20px auto;
+        font-size: 0.6876em;
     }
 
     .quatro,
@@ -743,16 +744,11 @@ input[type=checkbox]:checked+label:before {
     .block_3_mobile {
         background-color: #131313;
         color: #fff;
-        margin-top: -400px;
+        margin-top: -300px;
         margin-bottom: 400px;
     }
     .text_white {
         margin: 15px auto 30px;
-    }
-
-    .mobile_slider {
-        position: absolute;
-        align-self: center;
     }
     
     .black_form_inside {
@@ -792,15 +788,8 @@ input[type=checkbox]:checked+label:before {
         position: relative;
         height: 207px;
         background-size: cover;
-        margin: 0 auto;
     }
 
-    .play {
-        position: absolute;
-        left: 37%;
-        top: 25%;
-    }
-    
     .block_list_text {
         width: 270px;
         margin: -127px 0 0;
@@ -856,7 +845,6 @@ input[type=checkbox]:checked+label:before {
         font-size: 0.7875em;
     }
 
-    .group_2_1_text,
     .text_simple {
         font-size: 0.6875em;
         color: #fff;
@@ -870,5 +858,11 @@ input[type=checkbox]:checked+label:before {
     .number {
         color: #fff;
         text-decoration: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .block_2 {
+        max-height: 950px;
     }
 }
